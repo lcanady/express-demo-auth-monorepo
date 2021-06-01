@@ -1,0 +1,16 @@
+{
+  "name": "express-demo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd client && yarn start\"  \"cd server && nodemon index\" ",
+    "start": "concurrently \"cd client && yarn build\" \" cd server && node index\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
